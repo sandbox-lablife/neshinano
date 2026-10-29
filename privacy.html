@@ -69,7 +69,7 @@ footer{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--line);col
 <ul>
 <li>テストに参加するときにフォームへ入力したメールアドレスは、テストの登録（案内メールの送信とテスターへの追加）だけに使いました。オープンテスト版の配信とともに破棄します。</li>
 <li>アプリの利用を終了したいときは、アプリを削除（アンインストール）してください。</li>
-<li>メールアドレスを早めに削除してほしいときは、次のアドレスへ連絡してください。確認のうえ削除します。<br>sandboxlablife@gmail.com</li>
+<li>メールアドレスを早めに削除してほしいときは、次のアドレスへ連絡してください。確認のうえ削除します。<br><span class="mail" data-u="sandboxlablife" data-d="gmail.com">（JavaScript を有効にすると表示されます）</span></li>
 </ul>
 
 <h2>9. 子どもの利用について</h2>
@@ -79,9 +79,10 @@ footer{margin-top:3.5rem;padding-top:1.4rem;border-top:1px solid var(--line);col
 <p>この方針は、必要に応じて見直します。変更するときは、このページでお知らせします。</p>
 
 <h2>11. お問い合わせ</h2>
-<p>sandboxlablife@gmail.com</p>
+<p><span class="mail" data-u="sandboxlablife" data-d="gmail.com">（JavaScript を有効にすると表示されます）</span></p>
 
 <footer>© 2026 KINA / sandbox-lablife</footer>
 </main>
+<script>(function(){var e=document.querySelectorAll(".mail");for(var i=0;i<e.length;i++){var a=[e[i].getAttribute("data-u"),e[i].getAttribute("data-d")].join("@");var l=document.createElement("a");l.href="mailto:"+a;l.textContent=a;e[i].textContent="";e[i].appendChild(l);}})();</script>
 </body>
 </html>
